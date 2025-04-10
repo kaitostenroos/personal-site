@@ -1,0 +1,17 @@
+nav.split-ui-wrapper-nav {
+    display: block;
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    margin: 10px;
+    border: 10px solid #ffffff30;
+    border-radius: 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: #ffffff30;
+    z-index: 999;
+}
+nav.blur {
+    backdrop-filter: blur(30px);
+}

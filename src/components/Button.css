@@ -1,0 +1,33 @@
+button.split-ui-button {
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: inherit;
+    background-color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent !important;
+}
+/*Adding a hover effect prevents cursor braking on chromium*/
+button.split-ui-button:hover {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+button:active.split-ui-button {
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+
+button.row-stretch {
+    width: 100%;
+}
+button.col-stretch {
+    height: 100%;
+}
+
+@media (hover: none) {
+    button.split-ui-button:hover {
+      background-color: rgba(255, 255, 255, .5);
+    }
+}

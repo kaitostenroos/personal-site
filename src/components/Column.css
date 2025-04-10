@@ -1,0 +1,6 @@
+div.split-ui-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: inherit;
+}
