@@ -1,14 +1,15 @@
 nav.split-ui-wrapper-nav {
-    display: block;
+    display: flex;
     position: sticky;
     top: 0;
+    gap: 2px;
     padding: 0px;
     margin: 10px;
     border: 10px solid #ffffff30;
     border-radius: 40px;
     overflow: hidden;
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: fit-content;
     background-color: #ffffff30;
     z-index: 999;
 }

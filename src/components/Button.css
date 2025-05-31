@@ -5,18 +5,20 @@ button.split-ui-button {
     font-size: 1rem;
     font-weight: 500;
     color: inherit;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, .7);
     cursor: pointer;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent !important;
 }
 /*Adding a hover effect prevents cursor braking on chromium*/
 button.split-ui-button:hover {
-    background-color: rgba(255, 255, 255, .8);
+    font-weight: bold;
+    padding: 15px 20px;
 }
 
 button:active.split-ui-button {
-    background-color: rgba(255, 255, 255, 1) !important;
+    font-size: .9rem;
+    padding: 15px 5px;
 }
 
 button.row-stretch {
