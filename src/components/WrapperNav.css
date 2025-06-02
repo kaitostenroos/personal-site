@@ -1,6 +1,6 @@
 nav.split-ui-wrapper-nav {
     display: flex;
-    position: sticky;
+    position: absolute;
     top: 0;
     gap: 2px;
     padding: 0px;

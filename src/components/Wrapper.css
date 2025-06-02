@@ -9,7 +9,7 @@ div.split-ui-wrapper {
     border-radius: 40px;
     overflow: hidden;
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: fit-content;
     background-color: #ffffff30;
 }
 div.blur {

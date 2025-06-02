@@ -1,8 +1,8 @@
 import './Wrapper.css'
-function Wrapper({width = 300, blur = false, children}) {
+function Wrapper({width = '300px', blur = false, children}) {
     if (blur) {
         return(
-            <div className="split-ui-wrapper blur" style={{ width: `${width}px` }}>
+            <div className="split-ui-wrapper blur" style={{ width: `${width}` }}>
                 {children}
             </div>
         )

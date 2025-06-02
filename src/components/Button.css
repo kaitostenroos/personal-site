@@ -1,11 +1,10 @@
 button.split-ui-button {
-    border-radius: 2px;
-    border: 1px solid transparent;
+    border: 0px solid transparent;
     padding: 15px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight:normal;
     color: inherit;
-    background-color: rgba(255, 255, 255, .7);
+    background-color: transparent;
     cursor: pointer;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent !important;
@@ -13,12 +12,19 @@ button.split-ui-button {
 /*Adding a hover effect prevents cursor braking on chromium*/
 button.split-ui-button:hover {
     font-weight: bold;
+    animation-name: expand;
+    animation-iteration-count: 1;
+    animation-duration: .5s;
     padding: 15px 20px;
 }
 
 button:active.split-ui-button {
+    font-weight: lighter;
+    animation-name: shrink;
+    animation-iteration-count: 1;
+    animation-duration: .1s;
     font-size: .9rem;
-    padding: 15px 5px;
+    padding: 15px 10px;
 }
 
 button.row-stretch {
@@ -32,4 +38,14 @@ button.col-stretch {
     button.split-ui-button:hover {
       background-color: rgba(255, 255, 255, .5);
     }
+}
+
+@keyframes expand {
+    from {padding: 15px; font-weight: 500;}
+    to {padding: 15px 20px; font-weight: bold;}
+}
+
+@keyframes shrink {
+    from {font-size: 1; font-weight: bold;}
+    to {font-size: .9rem; padding: 15px 10px; font-weight: lighter;}
 }

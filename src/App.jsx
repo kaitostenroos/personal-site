@@ -12,23 +12,26 @@ function App() {
     <>
       <WrapperContainer>
         <WrapperNav blur>
-        <Button></Button>
-        <Button></Button>
-        <Button></Button>
-        <Button></Button>
+          <Row>
+            <Button></Button>
+            <Button></Button>
+            <Button></Button>
+            <Button></Button>
+          </Row>
+        
       </WrapperNav>
       </WrapperContainer>
       
       <Wrapper>
         <Row>
-            <Textbox>
+            <Textbox width="fit-content">
                 <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet,<br /> consectetur adipisicing elit. Eligendi consequatur voluptatibus dicta reprehenderit dolores aliquam iste commodi,<br /> id quaerat? Laboriosam amet praesentium mollitia harum est perferendis aliquam eius minima laudantium.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consequatur voluptatibus dicta reprehenderit dolores aliquam iste commodi id quaerat? Laboriosam amet praesentium mollitia harum est perferendis aliquam eius minima laudantium.</p>
             </Textbox>
         </Row>
         <Row>
-          <Button></Button>
-          <Button></Button>
+          <Button rowStretch></Button>
+          <Button rowStretch></Button>
           <Button text="?"></Button>
         </Row>
       </Wrapper>
